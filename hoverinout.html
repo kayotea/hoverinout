@@ -1,18 +1,31 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Ninja Cat</title>
-        <link rel="stylesheet" type="text/css" href="ninjacat.css" />
+        <title>SwitchPic</title>
+        <link rel="stylesheet" type="text/css" href="hoverinout.css" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript">
              $(document).ready(function(){
+
+                $('img').hover(function(){
+                    var src = $(this).attr('src');
+                    var altsrc = $(this).attr('data-alt-src')
+
+                    $(this).attr('src', altsrc);
+                    $(this).attr('data-alt-src', src);
+                });
 
              });
         </script>
     </head>
         <body>
         <div id="wrapper" class="center">
-            
+            <div id="container">
+                <img src="smile.png" data-alt-src="frown.png" />
+                <img src="yheart.png" data-alt-src="bheart.png" />
+                <img src="open.png" data-alt-src="closed.png" />
+                <img src="pear.png" data-alt-src="avocado.png" />
+            </div>
         </div> <!--end of wrapper-->
     </body>
 </html>

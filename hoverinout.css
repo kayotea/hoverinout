@@ -1,1 +1,22 @@
 /*stylesheet for hoverinout.html*/
+
+#wrapper{
+    background: lightblue;
+    width: 900px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#container{
+    background: white;
+}
+
+.center{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
